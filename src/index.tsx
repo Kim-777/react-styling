@@ -4,15 +4,11 @@ import "./index.css";
 import App from "./App";
 import { ThemeProvider } from "styled-components";
 import reportWebVitals from "./reportWebVitals";
-
-const them = {
-  backgroundColor: "black",
-  color: "white",
-};
+import { darkTheme, lightTheme } from "./theme";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={them}>
+    <ThemeProvider theme={darkTheme}>
       <App />
     </ThemeProvider>
   </React.StrictMode>,

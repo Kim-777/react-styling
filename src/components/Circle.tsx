@@ -28,6 +28,8 @@ export default function Circle({
   borderColor,
   text = "기본 텍스트",
 }: CircleProps) {
+  const [value, setValue] = React.useState<number>();
+
   return (
     <Container bgColor={bgColor} borderColor={borderColor ?? "red"}>
       {text}
