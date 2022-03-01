@@ -1,5 +1,6 @@
 import "./App.css";
 import styled, { keyframes } from "styled-components";
+import Circle from "./components/Circle";
 
 const Father = styled.div`
   display: flex;
@@ -42,33 +43,12 @@ const Box = styled.div`
   }
 `;
 
-const Text = styled.span`
-  color: white;
-`;
-
-const Circle = styled(Box)`
-  border-radius: 50px;
-`;
-
-const Btn = styled.button`
-  color: white;
-  background-color: tomato;
-  border: 0;
-  height: 30;
-  border-radius: 15px;
-`;
-
-const Input = styled.input.attrs({ require: true })`
-  background-color: gainsboro;
-`;
-
 function App() {
   return (
-    <Father style={{ display: "flex" }} as="header">
-      <Box wrapperColor="skyblue">
-        <Imoji>🤪</Imoji>
-      </Box>
-    </Father>
+    <div>
+      <Circle borderColor="yellow" bgColor="skyblue" />
+      <Circle bgColor="blue" />
+    </div>
   );
 }
 
